@@ -2,7 +2,7 @@ from utils.controller import get_user_info, add_user, remove_user, update_user, 
 from utils.model import users
 
 
-def main():
+def main() -> None:
     while True:
         print("==============MENU==============")
         print("0 - zamknij aplikację")
@@ -13,7 +13,7 @@ def main():
         print("5 - Przygotuj mapę znajomych")
         print("==============MENU==============")
 
-        choice = input('Wybierz opcję menu: ')
+        choice = input('Wybierz opcję menu')
         if choice == '0': break
         if choice == '1': get_user_info(users)
         if choice == '2': add_user(users)
